@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet drag n drop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section id="s1">
+
+        <div class="carre draggable"></div>
+        <div class="carre1 draggable"></div>
+        <div class="carre2 draggable"></div>
+
+
+
+    </section>
+    
+    <section id="s2">
+
+            <div class="div1">
+                <img class="draggable" src="images/image1.png">
+            </div>
+            <div class="div2">
+                <img class="draggable" src="images/image2.png">
+            </div>
+            <div class="div3">
+                <img class="draggable" src="images/image3.png">
+            </div>
+            <div class="div4">
+                <img class="draggable" src="images/image4.png">
+
+            </div>
+            <div class="div5">
+                <img class="draggable" src="images/image5.png">
+            </div>
+       
+    </section>
+
+
+    <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+
+    <script>
+        var draggableElems = document.querySelectorAll('.draggable');
+        // array of Draggabillies
+        var draggies = []
+        // init Draggabillies
+        for (var i = 0; i < draggableElems.length; i++) {
+            var draggableElem = draggableElems[i];
+            var draggie = new Draggabilly(draggableElem, {
+                // options...
+            });
+            draggies.push(draggie);
+        }
+    </script>
+</body>
