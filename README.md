@@ -16,3 +16,4 @@ _italique_ s'affiche ainsi : italique
 2. Captures d'écran des étapes du projet (chronologie +dates)
 3. Focus (points de détails du projet : code, image...)
 4. La structure du projet (navigation, pages...)
+5. Bonjour
