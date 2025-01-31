@@ -1,117 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rendu 2 - Ana Clara dos Santos SOuza</title>
+    <title>Rendu 2 - Ana Clara dos Santos Souza</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+    <!-- MENU BURGER -->
+    <div class="burger-menu">
+        <div class="burger-icon"> ☰ </div>
+        <nav class="menu">
+            <div class="close-btn">✖</div>
+            <ul>
+                <li><a href="#s1">THE CANVA</a></li>
+                <li><a href="#s2">GABARIT</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <section id="s1">
-    <div class="image-container">
-        <div class="div1">
-            <img class="draggable" src="images/1.jpg">
-        </div>
-        <div class="div2">
-            <img class="draggable" src="images/2.jpg">
-        </div>
-        <div class="div3">
-            <img class="draggable" src="images/3.jpg">
-        </div>
-        <div class="div4">
-            <img class="draggable" src="images/4.jpg">
-        </div>
-        <div class="div5">
-            <img class="draggable" src="images/5.jpg">
-        </div>
-    
-        <div class="div6">
-            <img class="draggable" src="images/6.jpg">
-        </div>
-        <div class="div7">
-            <img class="draggable" src="images/7.jpg">
-        </div>
-        <div class="div8">
+        <div class="image-container">
             <img class="draggable" src="images/8.jpg">
-        </div>
-        <div class="div9">
+            <img class="draggable" src="images/24.jpg">
+            <img class="draggable" src="images/3.jpg">
+            <img class="draggable" src="images/4.jpg">
+            <img class="draggable" src="images/16.jpg">
+            <img class="draggable" src="images/23.jpg">
+            <img class="draggable" src="images/20.jpg">
+            <img class="draggable" src="images/1.jpg">
             <img class="draggable" src="images/9.jpg">
-        </div>
-        <div class="div10">
             <img class="draggable" src="images/10.jpg">
-        </div>
-    
-        <div class="div11">
-            <img class="draggable" src="images/11.jpg">
-        </div>
-        <div class="div12">
+            <img class="draggable" src="images/6.jpg">
             <img class="draggable" src="images/12.jpg">
-        </div>
-        <div class="div13">
+            <img class="draggable" src="images/24.jpg">
+            <img class="draggable" src="images/14.jpg">
+            <img class="draggable" src="images/19.jpg">
+            <img class="draggable" src="images/16.jpg">
+            <img class="draggable" src="images/2.jpg">
+            <img class="draggable" src="images/23.jpg">
+            <img class="draggable" src="images/15.jpg">
+            <img class="draggable" src="images/7.jpg">
+            <img class="draggable" src="images/17.jpg">
+            <img class="draggable" src="images/22.jpg">
+            <img class="draggable" src="images/11.jpg">
+            <img class="draggable" src="images/5.jpg">
             <img class="draggable" src="images/13.jpg">
         </div>
-        <div class="div14">
-            <img class="draggable" src="images/14.jpg">
-        </div>
-        <div class="div15">
-            <img class="draggable" src="images/15.jpg">
-        </div>
-    
-        <div class="div16">
-            <img class="draggable" src="images/16.jpg">
-        </div>
-        <div class="div17">
-            <img class="draggable" src="images/17.jpg">
-        </div>
-        <div class="div18">
-            <img class="draggable" src="images/18.jpg">
-        </div>
-        <div class="div19">
-            <img class="draggable" src="images/19.jpg">
-        </div>
-        <div class="div20">
-            <img class="draggable" src="images/20.jpg">
-        </div>
-    
-        <div class="div21">
-            <img class="draggable" src="images/21.jpg">
-        </div>
-        <div class="div22">
-            <img class="draggable" src="images/22.jpg">
-        </div>
-        <div class="div23">
-            <img class="draggable" src="images/23.jpg">
-        </div>
-        <div class="div24">
-            <img class="draggable" src="images/24.jpg">
-        </div>
-        <div class="div25">
-            <img class="draggable" src="images/25.jpg">
-        </div>
-    </div>
     </section>
-    
+
     <section id="s2">
-
+        <h1>Section 2</h1>
     </section>
-
 
     <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+    <script src="script.js"></script>
 
-    <script>
-        var draggableElems = document.querySelectorAll('.draggable');
-        // array of Draggabillies
-        var draggies = []
-        // init Draggabillies
-        for (var i = 0; i < draggableElems.length; i++) {
-            var draggableElem = draggableElems[i];
-            var draggie = new Draggabilly(draggableElem, {
-                // options...
-            });
-            draggies.push(draggie);
-        }
-    </script>
 </body>
+</html>
